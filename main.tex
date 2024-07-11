@@ -1,0 +1,31 @@
+\documentclass{report} % Better to have this as report looks better than the article option
+\usepackage{graphicx} % Required for inserting images
+\usepackage{mathtools}
+\usepackage{graphicx}
+
+\title{Test Project\\
+{\Large University of Bristol}}
+\author{Alec McKinlay}
+\date{July 2024}
+
+\begin{document}
+
+\maketitle
+
+\chapter*{Abstract}
+This is a test thesis abstract
+
+\chapter*{Dedication}
+This would be a section for Dedication
+
+\tableofcontents
+
+\include{ch1_LitRev}
+\include{Ch2_Methods}
+\include{Conclusions}
+\appendix
+\include{Appendix} % This changes the style slightly, this can be viewed in the contents
+\bibliographystyle{unsrtnat}
+\bibliography{ref}
+
+\end{document}
